@@ -15,8 +15,8 @@
 
 // Your GPRS credentials
 const char apn[]  = "orangeworld";
-const char user[] = "orange";
-const char pass[] = "orange";
+const char gprsUser[] = "orange";
+const char gprsPass[] = "orange";
 
 // MQTT details
 const char* broker = "m21.cloudmqtt.com";
@@ -105,7 +105,7 @@ void setup() {
     SerialMon.println("Network connected");
   }
 
-#if TINY_GSM_USE_GPRS && defined TINY_GSM_MODEM_HAS_GPRS
+
     SerialMon.print(F("Connecting to "));
   SerialMon.print(apn);
     if (!modem.gprsConnect(apn, gprsUser, gprsPass)) {
@@ -114,7 +114,7 @@ void setup() {
       return;
   }
   SerialMon.println(" OK");
-#endif
+
 
   // MQTT Broker setup
   mqtt.setServer(broker, 12492);
