@@ -1,0 +1,176 @@
+Wait...
+Initializing modem...
+AT
+
+ERROR
+AT
+
+OK
+AT+RST=1
+[6226] ### TinyGSM Version: 0.7.9
+AT
+
+
+Init...
+AT
+
+OK
+AT&FZE0
+AT&FZE0
+
+OK
+AT+CMEE=0
+
+OK
+AT+CMER=3,0,0,2
+
+OK
+[6421] ### Modem: AI-Thinker A6
+AT+CPIN?
+
+ERROR
+AT+CPIN?
+
+ERROR
+AT+CPIN?
+
+ERROR
+AT+CPIN?
+
++CIEV: service,  0
++CIEV: roam, 0
+
++CREG: 2
+
+^CINIT: 1, 
+^CINIT: 2, 8, 41891
+
++CPIN:SIM PIN
+
+OK
+ATI
+
+Ai Thinker Co.LTD
+A6
+
+V03.06.20171127R
+
+OK
+Modem: Ai Thinker Co.LTD A6  V03.06.20171127R
+AT+CPIN="0104"
+
+OK
+Waiting for network...AT+CREG?
+
++CREG: 1,13
+
+OK
+AT+CREG?
+
++CREG: 1,13
+
+OK
+AT+CREG?
+
++CREG: 1,13
+
+OK
+AT+CREG?
+
++CREG: 1,13
+
+OK
+AT+CREG?
+
+^STN: 3
+
+^CINIT: 4, 8192, 3
+
++CREG: 1,13
+
+OK
+AT+CREG?
+
++CREG: 1,13
+
+OK
+AT+CREG?
+
+^CINIT: 8, 2048, 1
+
++CREG: 1,13
+
+OK
+AT+CREG?
+
+^CINIT: 16, 0, 1638440
+
+^CINIT: 32, 0, 0
+
++CREG: 1,13
+
+OK
+AT+CREG?
+
++CREG: 1,13
+
+OK
+AT+CREG?
+
++CIEV: service,  1
++CIEV: roam, 0
+
++CREG: 1
+
++CREG: 1,1
+
+OK
+ OK
+AT+CREG?
+
++CREG: 1,1
+
+OK
+Network connected
+Connecting to orangeworldAT+CIPSHUT
+
+ERROR
+AT+CGATT=1
+
++CIEV: "SMSFULL",0
+
++CIEV: "MESSAGE",1
+
++CIEV: READY
+
+OK
+AT+CGDCONT=1,"IP","orangeworld"
+
+OK
+AT+CGACT=1,1
+
++CTZV:19/05/26,17:05:48,+02
+
+OK
+ OK
+=== MQTT NOT CONNECTED ===
+Connecting to m21.cloudmqtt.comAT+CIPCLOSE=255
+
+ERROR
+AT+CIPSTART="TCP","m21.cloudmqtt.com",12492
+
+CONNECT OK
+
+OK
+[92956] ### Unhandled: CONNECT OK
+
+OK
+ fail
+=== MQTT NOT CONNECTED ===
+Connecting to m21.cloudmqtt.comAT+CIPCLOSE=255
+
+ERROR
+AT+CIPSTART="TCP","m21.cloudmqtt.com",12492
+
+ERROR
+ fail
