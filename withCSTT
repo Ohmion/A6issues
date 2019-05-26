@@ -64,6 +64,6 @@ AT+CIPSTATUS
 OK
 AT+CIPSTART="TCP","m21.cloudmqtt.com",12492
 
-**
+**(after few seconds) - I can't use CIPSTART when CIPSTATUS is "0, IP START"
 
 COMMAND NO RESPONSE!
